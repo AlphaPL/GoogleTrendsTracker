@@ -1,0 +1,7 @@
+{ 
+  "option":"a",
+  "avg_multiplier": 0.5,
+  "alert_threshold": 1,
+  "time_scale": 10,
+  "hours_to_compare": 5
+ }
