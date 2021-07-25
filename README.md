@@ -32,7 +32,7 @@ If you want to use proxies (and you have to if you want to fetch a lot of keywor
 
 Like proxies, specify them in a comma separated list in file keywords.csv, example file looks like this
 
-![Alt text](/proxies.png?raw=true "Optional Title")
+![Alt text](/keywords.png?raw=true "Optional Title")
 
 
 1. **How the script works.** 
