@@ -13,14 +13,14 @@ python3 -m pip install requests
 
 python3 -m pip install pandas
 
-1. **Running the script:**
+2. **Running the script:**
 
 Run terminal and call
 
 python3 trends.py
 
 
-1. **Specify proxies**
+3. **Specify proxies**
 
 
 If you want to use proxies (and you have to if you want to fetch a lot of keywords) you need to use proxies. The way the library works is that it fetches records 5 at a time – because Trends allows only this many. So for 500 records we make 100 requests to google and it would likely flag us as a bot. Specify proxy addresses in proxies.csv like so, in a comma separated file. The script will then rotate between them when making requests.
@@ -28,14 +28,14 @@ If you want to use proxies (and you have to if you want to fetch a lot of keywor
 
 ![Alt text](/proxiess.png?raw=true "Optional Title")
 
-1. **Specify keywords to search**
+4. **Specify keywords to search**
 
 Like proxies, specify them in a comma separated list in file keywords.csv, example file looks like this
 
 ![Alt text](/keywords.png?raw=true "Optional Title")
 
 
-1. **How the script works.** 
+5. **How the script works.** 
 
 The script once ran every 1 hour will scrape Trends data for keywords specified in 4. It then puts them in an Excel file trends.csv for manual inspection.
 
@@ -46,7 +46,7 @@ But we also alert the user via Telegram of any detected Trending keywords. Condi
 
 To make Telegram alerts work you specify two parameters in your environment variables BOT_API_KEY - api key of a bot that will publish alerts and CHAT_ID - id of the channel you want alerts to appear in.
 
-1. **Config and what it controls**
+6. **Config and what it controls**
 
 The main config of the script that dictates how it runs is present in the config.json file, here’s sample content
 
